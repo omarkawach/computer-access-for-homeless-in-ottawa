@@ -1,6 +1,8 @@
 # How Accessible are Publicly Accessible Computers for Ottawa’s Homeless Population?
 
-An end of semester independent project for GEOG 428 at UVic. 
+**Author:** Omar Kawach
+
+**Description:** An end of semester independent project for GEOG 428 at the University of Victoria. 
 
 ## Table of Contents
 
@@ -11,8 +13,9 @@ An end of semester independent project for GEOG 428 at UVic.
 - Project Development
   - Results
   - Discussion
+- Development Instructions (Windows)
 - Sources
-- Author
+- Credits
 
 ## Project Proposal
 
@@ -42,7 +45,42 @@ To tackle the digital divide that impacts the homeless, services that provide ac
 
 ### Results
 
+save outputs?
+buildings.to_file("../shapefiles//closest/closest.shp")
+
 ### Discussion
+
+Add a disclaimer about shelters (like YSB)
+
+Some Shelters not in Figure 2 were added. 
+
+Some of the results were animal shelters
+
+Help with answering the issue of where shelters are
+
+Help researchers answer more questions than I asked, use my code as a starter kit
+
+For example, we asked how many shelters have wifi. Someone can add to my dataset the hours for a shelter and see if the closest PAC has the same hours.
+
+Code could be refactored
+
+## Development Instructions (Windows)
+
+Install [*Anaconda Navigator*](https://www.anaconda.com/)
+
+Get GeoPandas
+
+- Open *Anaconda Prompt* as admin and [create a new environment](https://geopandas.readthedocs.io/en/latest/getting_started/install.html#creating-a-new-environment) called ```geo_env```.
+- Next, open *Anaconda Navigator* and click on ```Home``` and set ```Applications on``` to ```geo_env``` instead of ```base (root)```. 
+- Click the ```install``` button for *Spyder* in the *Anaconda Navigator*. 
+- After all these steps you should be ready to run the new environment in Spyder. 
+
+Other libraries such as Matplotlib
+- Use ```pip install [name-of-library]``` in the ```geo_env```.
+
+To use Jupyter Notebook in ```geo_env``` (*VSCode*)
+- Open *Anaconda Prompt* as admin and run ```pip install ipykernel``` and ```conda install pywin32```
+- Download the Python extension in *VSCode*
 
 ## Sources
 
@@ -54,7 +92,6 @@ Orrick, R. (2011). Envisioning an internet center for homeless individuals: One 
 
 Rhoades, H., Wenzel, S. L., Rice, E., Winetrobe, H., & Henwood, B. (2017). No digital divide? Technology use among homeless adults. Journal of Social Distress and the Homeless, 26(1), 73-77. http://dx.doi.org/10.1080/10530789.2017.1305140 
 
+## Credits
 
-## Author
-
-Omar Kawach 
+Jordahl, K. (2014). GeoPandas: Python tools for geographic data. URL: [https://github.com/Geopandas/Geopandas](https://github.com/Geopandas/Geopandas).
