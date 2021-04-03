@@ -42,7 +42,7 @@ See [PACs Solver Jupyter Notebook](https://github.com/omarkawach/computer-access
 
 ### Jupyter Notebook (in Browser)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/omarkawach/computer-access-for-homeless-in-ottawa.git/HEAD)
 
 ### Windows
 
