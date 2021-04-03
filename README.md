@@ -44,6 +44,8 @@ See [PACs Solver Jupyter Notebook](https://github.com/omarkawach/computer-access
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/omarkawach/computer-access-for-homeless-in-ottawa.git/HEAD)
 
+**Note:** The Binder may take a few minutes to build.
+
 ### Windows
 
 Install [*Anaconda Navigator*](https://www.anaconda.com/)
