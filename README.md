@@ -4,24 +4,17 @@
 
 **Description:** An end of semester independent project for GEOG 428 at the University of Victoria. 
 
-## Table of Contents
-
-- Project Proposal 
-  - Introduction
-  - Methods
-  - Contributions
-- Project Development
-  - Results
-  - Discussion
-- Development Instructions (Windows)
-- Sources
-- Credits
+**Note:** "Shelters" in this repository refer to organizations that offer health and social services such as housing, food, support for the vulnerable, etc. 
 
 ## Project Proposal
 
 ### Introduction
 
-Over the years, the Alliance to End Homelessness Ottawa (ATEHO) has published research as part of their mission to find measures that tackle homelessness. The measures include targeted efforts, potential policies, and collaboration. Thus far, ATEHO’s publications lack mention of the importance of technology for the homeless population. Technology allows the homeless to utilize social services, stay connected, and search for jobs and housing (Eyrich-Garg, 2011).  Considering that the City of Ottawa boasts an impressive amount of publicly accessible computers, the research to be conducted aims to fill the gaps on their accessibility for one of Ottawa’s most vulnerable people (i.e., the homeless). One approach to determine accessibility is to calculate the Euclidian distance between shelters and publicly accessible computers. The spatial analysis techniques in the research to be conducted follow the accessibility measures cited in a publication on access to urban health services (Apparicio et al., 2017). Therefore, the methodology itself is not unique, but the data and findings are. Additionally, Wi-Fi access will be considered as part of the research since areas with publicly accessible computers may offer free internet for people to connect to.
+Over the years, the Alliance to End Homelessness Ottawa (ATEHO) has published research as part of their mission to find measures that tackle homelessness. The measures include targeted efforts, potential policies, and collaboration. Thus far, ATEHO’s publications lack mention of the importance of technology for the homeless population. Technology allows the homeless to utilize social services, stay connected, and search for jobs and housing (Eyrich-Garg, 2011). Considering that the City of Ottawa boasts an impressive amount of publicly accessible computers, the research to be conducted aims to fill the gaps on their accessibility for one of Ottawa’s most vulnerable people (i.e., the homeless). One approach to determine accessibility is to calculate the Euclidian distance between shelters and publicly accessible computers. The spatial analysis techniques in the research to be conducted follow the accessibility measures cited in a publication on access to urban health services (Apparicio et al., 2017). Therefore, the methodology itself is not unique, but the data and findings are. Additionally, Wi-Fi access will be considered as part of the research since areas with publicly accessible computers may offer free internet for people to connect to.
+
+## Study Area
+
+![](img/ottawa_boundary.jpg)
 
 ### Methods
 
@@ -43,28 +36,15 @@ To tackle the digital divide that impacts the homeless, services that provide ac
 
 ## Project Development
 
-### Results
+See [PACs Solver Jupyter Notebook](https://github.com/omarkawach/computer-access-for-homeless-in-ottawa/blob/main/notebooks/pacs_solver.ipynb)
 
-save outputs?
-buildings.to_file("../shapefiles//closest/closest.shp")
+## Development Instructions 
 
-### Discussion
+### Jupyter Notebook (in Browser)
 
-Add a disclaimer about shelters (like YSB)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org)
 
-Some Shelters not in Figure 2 were added. 
-
-Some of the results were animal shelters
-
-Help with answering the issue of where shelters are
-
-Help researchers answer more questions than I asked, use my code as a starter kit
-
-For example, we asked how many shelters have wifi. Someone can add to my dataset the hours for a shelter and see if the closest PAC has the same hours.
-
-Code could be refactored
-
-## Development Instructions (Windows)
+### Windows
 
 Install [*Anaconda Navigator*](https://www.anaconda.com/)
 
@@ -73,12 +53,12 @@ Get GeoPandas
 - Open *Anaconda Prompt* as admin and [create a new environment](https://geopandas.readthedocs.io/en/latest/getting_started/install.html#creating-a-new-environment) called ```geo_env```.
 - Next, open *Anaconda Navigator* and click on ```Home``` and set ```Applications on``` to ```geo_env``` instead of ```base (root)```. 
 - Click the ```install``` button for *Spyder* in the *Anaconda Navigator*. 
-- After all these steps you should be ready to run the new environment in Spyder. 
+- After all these steps you should be ready to run the new environment in Spyder for Python scripting. 
 
 Other libraries such as Matplotlib
 - Use ```pip install [name-of-library]``` in the ```geo_env```.
 
-To use Jupyter Notebook in ```geo_env``` (*VSCode*)
+To use Jupyter Notebook in ```geo_env```
 - Open *Anaconda Prompt* as admin and run ```pip install ipykernel``` and ```conda install pywin32```
 - Download the Python extension in *VSCode*
 
@@ -95,3 +75,7 @@ Rhoades, H., Wenzel, S. L., Rice, E., Winetrobe, H., & Henwood, B. (2017). No di
 ## Credits
 
 Jordahl, K. (2014). GeoPandas: Python tools for geographic data. URL: [https://github.com/Geopandas/Geopandas](https://github.com/Geopandas/Geopandas).
+
+## Data
+
+Open Ottawa - [Publicly Accessible Computers](https://open.ottawa.ca/datasets/publicly-accessible-computers/data?geometry=-77.710%2C45.058%2C-73.538%2C45.733)
