@@ -4,7 +4,7 @@
 
 **Description:** An end of semester independent project for GEOG 428 at the University of Victoria. 
 
-**Note:** "Shelters" in this repository refer to organizations that offer health and social services such as housing, food, support for the vulnerable, etc. 
+**Note:** "Shelters" in this repository refer to organizations that offer health and social services such as housing, food, support for the vulnerable, etc. The shelters may serve those who are not homeless.
 
 ## Project Proposal
 
